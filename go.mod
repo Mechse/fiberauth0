@@ -1,3 +1,3 @@
-module fiberauth0
+module github.com/Mechse/fiberauth0
 
 go 1.14
