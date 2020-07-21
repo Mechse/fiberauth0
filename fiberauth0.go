@@ -1,7 +1,20 @@
 package fiberauth0
 
-import "fmt"
+import (
+	"github.com/gofiber/fiber"
+)
 
-func Greet() {
-	fmt.Println("Hello from Auth0.")
+func Extractor() {}
+
+func parseOptions() {}
+
+func checkJWT() bool {
+	return true
+}
+
+// Protected does check your JWT token and validates it
+func Protected() func(*fiber.Ctx) {
+	return func(c *fiber.Ctx) {
+		c.Send("Hello World")
+	}
 }
